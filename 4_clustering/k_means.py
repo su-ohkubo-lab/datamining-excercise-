@@ -3,10 +3,10 @@ import numpy as np
 
 with open("iris.csv", 'r') as file:
     header = file.readline()
-    data = np.loadtxt(file, delimiter=',', usecols=(0,1,2,3,4))
+    data = np.loadtxt(file, delimiter=',', usecols=(0, 1, 2, 3, 4))
 
-inputs = data[:,0:4]
-labels = data[:,4]
+inputs = data[:, 0:4]
+labels = data[:, 4]
 
 K = 3
 model = cluster.KMeans(n_clusters=K).fit(inputs)
