@@ -14,6 +14,5 @@ else:
     print("すべての条件が満たされなかった．")
 
 print("条件分岐終了")
-print("xは {0}, yは {1}".format(x_value,y_value))
+print("xは {0}, yは {1}".format(x_value, y_value))
 print("xを小数点まで書くと {0:f} とか {0:e} となる".format(x_value))
-
